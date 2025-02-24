@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jabeen Taj's Portfolio - Full Stack Developer">
+    <meta name="keywords" content="Full Stack Developer, Web Development, Portfolio">
+    <meta name="author" content="Jabeen Taj">
+    <title>Jabeen Taj - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Jabeen <span>Taj</span></div>
+            <div class="links">
+                <a href="#home" class="link active">Home</a>
+                <a href="#about" class="link">About</a>
+                <a href="#skills" class="link">Skills</a>
+                <a href="#projects" class="link">Projects</a>
+                <a href="#contact" class="link">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#skills" onclick="toggleMenu()">Skills</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+            <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="main-container">
+            <h1>Hi, I'm <span>Jabeen Taj</span></h1>
+            <div class="typewriter">I'm a <span class="typewriter-text"></span></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jabeen-taj-839036259" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Jabeen2003" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="path/to/your/resume.pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="image">
+            <img src="taj.jpg" alt="Jabeen Taj">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a final-year Computer Science and Engineering student with a strong passion for Full Stack Development. Over the years, I have honed my skills in frontend and backend technologies, building scalable and user-friendly web applications. My expertise includes JavaScript, React, Node.js, Express, and MongoDB. I enjoy developing efficient, responsive, and dynamic web solutions that enhance user experience and solve real-world problems. Beyond academics, I am always eager to learn new technologies and collaborate on innovative solutions. I am currently looking for opportunities in Full Stack Development, Web Application Development, where I can apply my technical skills and grow as a developer.</p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <h3>Smart Bus Pass App</h3>
+                <p>Description of the project.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Online Transaction Fraud Detection</h3>
+                <p>Description of the project.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Netflix Dashboard using Power BI</h3>
+                <p>Description of the project.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jabeen Taj. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jabeen-taj-839036259" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Jabeen2003" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="sc.js"></script>
+</body>
+</html>
